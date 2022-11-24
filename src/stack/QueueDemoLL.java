@@ -10,6 +10,7 @@ public class QueueDemoLL {
 		head = ob.enqueue(head, 30);
 		head = ob.enqueue(head, 70);
 		ob.display(head);
-		
+		head=ob.dequeue(head);
+		ob.display(head);
 	}
 }
