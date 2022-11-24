@@ -31,16 +31,16 @@ public class Stack {
 
 	// peek operation
 	public void peek() {
-		if(top == 0) {
+		if (top == 0) {
 			System.out.println("stack is empty");
-		}else {
-			System.out.println("peek of stack is "+top);
+		} else {
+			System.out.println("peek of stack is " + top);
 		}
 	}
-	
+
 	public void pop(int element) {
 		top--;
-		System.out.println(element+" is deleted from stack now top is "+top);
+		System.out.println(element + " is deleted from stack now top is " + top);
 	}
 
 	public static void main(String[] args) {
@@ -50,18 +50,18 @@ public class Stack {
 		stack.stackCreated(30);
 		stack.stackCreated(70);
 		stack.peek();// calling peek method to fetch the first element.
-		while(true) {
-			System.out.println("Enter 1 to pop 70  \nEnter 2 to pop 30  \nenter 3 to pop 56  \nEnter 4 to dispaly  \nEnter 5 to exit");
+		while (true) {
+			System.out.println(
+					"Enter 1 to pop 70  \nEnter 2 to pop 30  \nenter 3 to pop 56  \nEnter 4 to dispaly  \nEnter 5 to exit");
 			int input = s.nextInt();
 			switch (input) {
 			case 1 -> stack.pop(70);
 			case 2 -> stack.pop(30);
 			case 3 -> stack.pop(70);
-			case 4 ->stack.printStack();
-			case 5 ->System.exit(0);
+			case 4 -> stack.printStack();
+			case 5 -> System.exit(0);
 			}
-		stack.peek();
-	
 		}
+
 	}
 }
